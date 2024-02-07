@@ -1,0 +1,280 @@
+/* main_section */
+.main_section {
+  margin: 0 auto;
+}
+.sidebar {
+  margin: 0;
+  width: 280px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+/* main */
+.main_section .main {
+  width: 100%;
+  margin: 0;
+  background: #f5f6f9;
+  padding: 64px 0 0;
+}
+.main .center {
+  margin: 0 auto;
+  max-width: 1056px;
+  width: 96%;
+}
+.search_container {
+  margin: 0 auto;
+  width: 96%;
+  max-width: 666px;
+}
+.search_container form > div {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(167, 79, 255, 0.05);
+  border-radius: 40px;
+  border: 1px solid #a74fff;
+  flex-wrap: nowrap;
+  padding: 8px 0;
+}
+.search_container #search_btn {
+  margin: 0 6px 0 24px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(/images/heyreal-ai-character/icon-search.svg) no-repeat center 0;
+  outline: 0;
+  border:0;
+}
+.search_container #search_btn.active,
+.search_container #search_btn:hover {
+  background-position: center -32px;
+}
+.search_container .searchbox{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 24px;
+    outline: 0;
+    border:0;
+    background: transparent;
+}
+/* top_lists */
+.top_lists{
+    margin: 48px auto 38px;
+    width: 100%;
+}
+.left_list{
+    justify-content: flex-start;
+}
+.left_list a,.left_list span,.top_lists .rencent #rencent_top{
+    display: block;
+    height: 24px;
+    padding:12px 24px;
+    margin:0 12px 10px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 24px;
+    border: 1px solid rgba(85,85,85,0.4);
+    border-radius: 10px;
+    transition: all linear .2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.left_list a:hover,.left_list span:hover,.top_lists .rencent #rencent_top:hover{
+    color:#A74FFF;
+    border-color: #A74FFF;
+}
+.left_list a.active,.left_list span.active,.top_lists .rencent #rencent_top.active{
+    color:#fff;
+    border-color: #A74FFF;
+    background: #A74FFF;
+}
+.left_list a i{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 24px;
+    height: 24px;
+    vertical-align: -5px;
+    background: url(/images/heyreal-ai-character/icon-create.svg) no-repeat center -3px;
+}
+.left_list a:hover i{
+    background-position: center -35px;
+}
+.left_list a.active i{
+    background-position: center -67px;
+}
+.top_lists .rencent{
+    display: inline-block;
+    width: initial;
+    position: relative;
+}
+.top_lists .rencent #rencent_top{
+    display: block;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.top_lists .rencent #rencent_top i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 20px;
+    background: #000;
+    background: url(/images/index/arrow1.svg) no-repeat center;
+}
+.top_lists .rencent #rencent_top i{
+    transform: rotateX('180deg');
+}
+.top_lists #rencent_lists{
+    display: none;
+    height: 0;
+    width: 192px;
+    position: absolute;
+    top: 58px;
+    overflow: hidden;
+    padding:16px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 10px 10px 10px 10px;
+}
+.top_lists #rencent_lists.active{
+    height: auto;
+    display: block;
+}
+.top_lists #rencent_lists >span,.top_lists #rencent_lists a{
+    display: block;
+    margin:0 auto 4px;
+    cursor: pointer;
+    padding:8px 10px 8px 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 24px;
+    transition: all linear .2s;
+    box-sizing: border-box;
+}
+.top_lists #rencent_lists >span:nth-last-child(1),.top_lists #rencent_lists a:nth-last-child(1){
+    margin: 0 auto;
+}
+.top_lists #rencent_lists >span:hover,.top_lists #rencent_lists >span.active,.top_lists #rencent_lists a:hover,.top_lists #rencent_lists a.active{
+    background: #F5F6F9;
+}
+.top_lists #rencent_lists >span img{
+    display: inline-block;
+    margin:0 14px 0 0;
+    vertical-align: -7px;
+}
+.character_container{
+    margin: 0 auto;
+    width: 100%;
+    max-height: 584px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-right: 17px;
+}
+.character_container::-webkit-scrollbar{
+    width: 6px;
+    background: transparent;
+    margin-left: 17px;
+}
+.character_container::-webkit-scrollbar-thumb{
+    background: #E5E6EA;
+    border-radius: 4px;
+}
+.character_item{
+    margin:0 0 24px;
+    width: 188px;
+    min-height: 268px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    transition: all linear .2s;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 24px 16px 12px;
+}
+.character_item:hover,.character_item.active{
+    background: rgba(167,79,255,0.1);
+}
+.character_item .character_name{
+    display: block;
+    text-decoration: none;
+}
+.character_item .character_name .title{
+    margin: 16px auto 0;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 20px;
+    text-decoration: none;
+    transition: all linear .2s;
+}
+.character_item .character_name img{
+    display: block;
+    margin: 0 auto;
+    transition: all linear .2s;
+}
+.character_item .character_name:hover img{
+    transform: scale(1.01);
+}
+.character_item .character_name:hover .title{
+    color: #A74FFF;
+}
+.character_item .info{
+    display: block;
+    margin:0 auto 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 20px;
+}
+.character_item .info i{
+    display: inline-block;
+    margin:0 4px 0 0;
+    vertical-align: -3px;
+    width: 20px;
+    height: 20px;
+    background: url(/images/index/icon-info.svg) no-repeat center 0;
+    background-size: 24px auto;
+    cursor: pointer;
+}
+.character_item .info i.character_like{
+    margin:0 6px 0 0;
+    width: 20px;
+    height: 20px;
+    background: url(/images/index/icon-like.svg) no-repeat center 0;
+    vertical-align: -5px;
+}
+.character_item .info i.character_like.active,.character_item .info i.character_like:hover{
+    background: url(/images/index/icon-like.svg) no-repeat center -20px;
+}
+.character_item .info:nth-last-child(1){
+    text-align: right;
+}
+@media screen and (max-width:1200px) {
+    .top_lists{
+        margin: 30px auto 20px;
+    }
+    .top_lists #rencent_lists{
+        left: auto;
+        right: 0;
+    }
+    .character_container{
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width:650px) {
+    .character_item{
+        padding:20px 14px;
+        width: 170px;
+    }
+}
